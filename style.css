@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato";
+}
+button{
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(186, 186, 186);
+}
+    /* This is Hero Section */
+#hero_section{
+    height: 100vh;
+    width: 100vw;
+}
+    /* Navigation Menu */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+    width: 100vw;
+    background-color: black;
+}
+.navbar .logo_name img{
+    height: 5rem;
+    width: 9rem;
+    cursor: pointer;
+}
+.navbar .nav{
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+}
+.navbar .nav li{
+    list-style: none;
+}
+.navbar .nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 0.5rem;
+    cursor: pointer;
+} 
+.navbar .nav li a:hover{
+    color: rgb(192, 192, 192);
+}
+.navbar .links button{
+    outline: none;
+    border-style: none;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+.navbar .links button:hover{
+    color: rgb(192, 192, 192);
+}
+.navbar .links .Online{
+    background-color: red;
+    border: none;
+}
+.navbar .links .Online i{
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0.4rem;
+}
+#hero_section .header{
+    background-image:url("Assets/head2.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+}
+
+    /* Hero Section Ends Here */
+
+#Second_section{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+#Second_section .sec_section_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 2rem 0;
+}
+#Second_section .sec_section_head h1{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+#Second_section .sec_section_head h1 span{
+    font-family: "Notable";
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#Second_section .sec_section_head p{
+    font-size: 1rem;
+    color: rgb(193, 193, 193);
+    letter-spacing: 0.1rem;
+    padding-top: 1rem;
+}
+#Second_section .card_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Second_section .card_section .card1, .card2, .card3{
+    height: 40vh;
+    width: 30vh;
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+#Second_section .card_section .card1 .order_btn, .card2 .order_btn, .card3 .order_btn{
+    outline: none;
+    border-style: none;
+    border: 0.5px solid white;
+    border-radius: 2rem;
+    color: white;
+    background: transparent;
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+}
+#Second_section .card_section .card1 .order_btn:hover, .card2 .order_btn:hover, .card3 .order_btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+    /* Second Section Ends Here */
+
+#third_card_section{
+    height: 200vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);  
+    color: white;
+}
+#third_card_section .third_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 2rem 0;
+}
+#third_card_section .third_head h1{
+    font-family: "lato";
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+#third_card_section .third_head h1 span{
+    font-family: "Notable";
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+#third_card_section .third_head p{
+    font-size: 1rem;
+    color: rgb(193, 193, 193);
+    letter-spacing: 0.1rem;
+}
+#third_card_section .column{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 50vh 50vh;
+    padding: 2rem 8rem;
+    gap: 2rem;
+}
+#third_card_section .column .box1 small, .box4 small, .box5 small{
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+}
+#third_card_section .column .box1 h1, .box4 h1, .box5 h1{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0 1.5rem 0;
+    font-weight: 400;
+}
+#third_card_section .column .box1 h1 span, .box4 h1 span, .box5 h1 span{
+    font-family: "Notable";
+    font-size: 2rem;
+}
+#third_card_section .column .box1 li, .box4 li, .box5 li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.801);
+    padding: 0.5rem 0;
+}
+#third_card_section .column .box1 li i, .box4 li i, .box5 li i{
+    padding-right: 0.5rem;
+}
+#third_card_section .column .box1 .dir, .box4 .dir, .box5 .dir{
+    margin: 4rem 0;
+    outline: none;
+    border-style: none;
+    border: 1px solid white;
+    padding: 0.8rem 1rem;
+    background: transparent;
+    border-radius: 2rem;
+    color: white;
+}
+#third_card_section .column .box1 .dir:hover, .box4 .dir:hover, .box5 .dir:hover{
+    background-color: white;
+    color: black;
+}
+#third_card_section .column .box1 .dir i, .box4 .dir i, .box5 .dir i{
+    color: red;
+    font-size: 1rem;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+    margin-left: 0.6rem;
+}
+#third_card_section .column .box2{
+    background-image: url("Assets/franchise1.JPG");
+}
+#third_card_section .column .box3{
+    background-image: url("Assets/franchise2.JPG");
+}
+#third_card_section .column .box6{
+    background-image: url("Assets/franchise3.JPG");
+}
+
+    /* Third Section Ends Here */
+
+#fourth_section{
+    height: 380vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+#fourth_section .fourth_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 2rem 0;
+    color: white;
+}
+#fourth_section .fourth_head h1{
+    font-family: "lato";
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: "lato";
+}
+#fourth_section .fourth_head h1 span{
+    font-family: "Notable";
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+#fourth_section .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 8rem;
+}
+#fourth_section .container .loc_card .loc_content{
+    color: white;
+    text-align: center;
+}
+#fourth_section .container .loc_card .loc_content small{
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 0.7rem;
+}
+#fourth_section .container .loc_card .loc_content h2{
+    padding: 1rem 0;
+}
+#fourth_section .container .loc_card .loc_content li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.801);
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+}
+#fourth_section .container .loc_card .loc_content li i{
+    padding-right: 0.3rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.801);
+}
+#fourth_section .container .loc_card .loc_content .loc_dir{
+    margin: 2rem 0;
+    outline: none;
+    border-style: none;
+    border: 1px solid white;
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+}
+#fourth_section .container .loc_card .loc_content .loc_dir:hover{
+    background-color: white;
+    color: black;
+}
+#fourth_section .container .loc_card .loc_content .loc_dir i{
+    margin-left: 0.8rem;
+}
+
+    /* Fourth Section Ends Here */
+
+#fifth_section{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#fifth_section .fifth_head{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+}
+#fifth_section .fifth_head h1{
+    font-family: "lato";
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+#fifth_section .fifth_head h1 span{
+    font-family: "Notable";
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+#fifth_section .village_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fifth_section .village_head .village_img{
+    margin-right: 1.5rem;
+}
+#fifth_section .village_head .village_content{
+    color: white;
+}
+#fifth_section .village_head .village_content small{
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+}
+#fifth_section .village_head .village_content h2{
+    padding: 1rem 0;
+}
+#fifth_section .village_head .village_content h2 span{
+    font-family: "Notable";
+}
+#fifth_section .village_head .village_content li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.801);
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+}
+#fifth_section .village_head .village_content li i{
+    padding-right: 0.3rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.801);
+    letter-spacing: 0.1rem;
+}
+#fifth_section .village_head .village_content .village_btn{
+    margin: 2rem 0;
+    outline: none;
+    border-style: none;
+    padding: 1rem;
+    background-color: rgb(36, 174, 84);
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+}
+#fifth_section .village_head .village_content .village_btn:hover{
+    background-color: rgb(83, 219, 131);
+}
+#fifth_section .village_head .village_content .village_btn i{
+    margin-left: 0.6rem;
+    font-size: 1rem;
+}
+
+    /* Fifth Section Ends Here */
+
+#opening_soon{
+    height: 220vh;
+    width: 100vw;
+    background-color: black;
+}
+#opening_soon .open_soon_head{
+    color: white;
+    padding: 3rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+}
+#opening_soon .open_soon_head h1{
+    font-family: "lato";
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+#opening_soon .open_soon_head h1 span{
+    font-family: "Notable";
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+#opening_soon .opening_card_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2rem 8rem;
+    gap: 2rem;
+}
+#opening_soon .opening_card_section .opening_card{
+    height: 35vh;
+    width: 25vw;
+    background-color: white;
+    border-radius: 0.4rem;
+    text-align: center;
+}
+#opening_soon .opening_card_section .opening_card .img_icon img{
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgb(231, 231, 231);
+    padding: 0.6rem 1rem;
+    margin: 1rem 0;
+}
+#opening_soon .opening_card_section .opening_card small{
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.6rem;
+}
+#opening_soon .opening_card_section .opening_card h2{
+    font-size: 1.4rem;
+    padding: 0.4rem 0;
+}
+#opening_soon .opening_card_section .opening_card h3{
+    font-size: 1.2rem;
+    padding: 0.4rem 0;
+}
+#opening_soon .opening_card_section .opening_card h4{
+    font-size: 1.2rem;
+    padding: 0.4rem 0;
+}
+#opening_soon .social_head{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    color: white;
+    font-size: 1.2rem;
+}
+#opening_soon .social_img{
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* Opening Soon Section Ends Here */
+
+#footer{
+    height: 80vh;
+    width: 100vw;
+    background: rgb(18, 18, 18);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+}
+
+#footer .first .logo{
+    padding: 0 0 1.5rem 0;
+}
+#footer .first .foot_para{
+    color: rgb(207, 207, 207);
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+#footer .first .foot_para2{
+    color: rgb(207, 207, 207);
+    font-size: 1rem;
+}
+#footer .second h2{
+    font-size: 0.8rem;
+    padding: 0 0 1.5rem 0;
+}
+#footer  li{
+    list-style: none;
+    color: rgb(207, 207, 207);
+    padding: 0.5rem 0;
+}
+#footer .third h2{
+    font-size: 0.8rem;
+    padding: 0 0 2rem 0;
+}
+#footer .third h3{
+    font-size: 1rem;
+}
+#footer .fourth{
+    margin-right: 10rem;
+}
+#footer .fourth h2{
+    font-size: 0.8rem;
+    padding: 0 0 2rem 0;
+}
+#footer .social_icons i{
+    font-size: 1rem;
+    background-color: red;
+    padding: 0.6rem 0.6rem;
+    border-radius: 50%;
+}
+#footer .fourth .google img{
+    padding: 2rem 0 1rem 0;
+}
+.copyright{
+    background-color: rgb(28, 28, 28);
+    border-top: 0.5px solid rgb(207, 207, 207);
+    color: rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5rem;
+    width: 100vw;
+}
+
+        /* Footer Ends Here */
+
+.sticky{
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    padding: 0.5rem;
+    background-color: rgb(49, 49, 49);
+    border-radius: 0.5rem;
+    position: sticky;
+    bottom: 2rem;
+    left: 2rem;
+    cursor: pointer;
+}
+.sticky i{
+    color: white;
+    font-size: 2rem;
+}
